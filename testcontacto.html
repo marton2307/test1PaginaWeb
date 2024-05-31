@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-header">
+            <img src="C:\Users\ligui\OneDrive\Escritorio\UIDE\cuarto ciclo\Programacion Web/imagenASU.jpeg" alt="Logo" class="logo">
+            <h1>Contacto</h1>
+        </div>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Nombres:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="cell">Teléfono:</label>
+                <input type="tel" id="cell" name="cell" maxlength="10" pattern= "\d*" required>
+            </div>
+            <div class="form-group"> 
+                <label for="pais">País:</label>
+                <select id="pais" name="pais" required>
+                    <option value="">Selecciona el país</option>
+                    <option value="ec">Ecuador</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ciudad">Ciudad:</label>
+                <select id="ciudad" name="Ciudad" required>
+                    <option value="">Selecciona la ciudad</option>
+                    <option value="qui">Quito</option>
+                    <option value="guayas">Guayaquil</option>
+                    <option value="cue">Cuenca</option>
+                    <option value="loxa">Loja</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dirección">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mesaje" name="mensaje" rows="4"></textarea>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
